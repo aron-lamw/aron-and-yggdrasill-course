@@ -1,0 +1,16 @@
+title: Aron And Yggdrasill
+description: 学习程序制作
+template:
+  repo: aron-and-yggdrasill-template
+  name: aron-and-yggdrasill
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
